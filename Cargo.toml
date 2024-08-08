@@ -1,0 +1,21 @@
+[package]
+name = "yew-app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# this is the development version of Yew
+yew = { git = "https://github.com/yewstack/yew/", features = ["csr"] }
+gloo = "0.5"
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+    "Document",
+    "Element",
+    "Node",
+    "HtmlHeadElement",
+    "ShadowRoot",
+    "ShadowRootInit",
+    "ShadowRootMode",
+]
